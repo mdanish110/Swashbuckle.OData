@@ -18,6 +18,7 @@ namespace Swashbuckle.OData
         private readonly SwaggerDocsConfig _swaggerDocsConfig;
         private readonly List<Func<IDocumentFilter>> _documentFilters;
         private bool _includeNavigationProperties;
+        private bool _excludeNavigationPropertiesRemoveFilter;
         internal bool enableCache;
 
         internal ODataSwaggerDocsConfig(SwaggerDocsConfig swaggerDocsConfig, HttpConfiguration httpConfiguration)
